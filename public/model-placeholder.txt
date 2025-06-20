@@ -1,0 +1,17 @@
+# ONNX Model Placeholder
+
+This is a placeholder file for the SRGAN model.
+
+To use the application, please:
+
+1. Download the SRGAN model file (srgan_generator.onnx)
+2. Place it in this directory (public/)
+
+The application expects the model file to be named exactly "srgan_generator.onnx".
+
+If you do not have the model file, you can either:
+1. Use a pre-trained SRGAN model for image enhancement
+2. Train your own SRGAN model using the ONNX format
+3. Convert an existing PyTorch or TensorFlow SRGAN model to ONNX format
+
+Note: The SRGAN model should have the standard architecture for image super-resolution.

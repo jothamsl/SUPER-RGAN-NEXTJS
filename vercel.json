@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "name": "super-resolution-frontend",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_BACKEND_URL": "@backend-url"
+  },
+  "functions": {
+    "app/**/*": {
+      "maxDuration": 300
+    }
+  },
+  "regions": ["iad1"],
+  "framework": "nextjs"
+}
