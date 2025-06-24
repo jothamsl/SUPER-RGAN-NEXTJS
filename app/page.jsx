@@ -109,7 +109,7 @@ export default function Home() {
 
       setLoadingProgress(60);
       const apiResponse = await fetch(
-        process.env.NEXT_PUBLIC_BACKEND_URL ||
+        process.env.NEXT_PUBLIC_BACKEND_URL + "/api/enhance" ||
           "http://localhost:3001/api/enhance",
         {
           method: "POST",
